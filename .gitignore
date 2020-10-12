@@ -1,2 +1,9 @@
+# gralde files
 /.gradle/
+/build/
 
+# eclipse files
+bin/
+.classpath
+.project
+.settings/
