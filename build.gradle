@@ -1,0 +1,26 @@
+plugins {
+    id 'eclipse'
+    id 'java'
+    id 'application'
+}
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.2'
+    testImplementation 'org.hamcrest:hamcrest:2.2'
+
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.6.2'    
+}
+
+application {
+    // Define the main class for the application.
+    mainClassName = 'org.oregonsd.Main'
+}
+
+test {
+    // Use junit platform for unit tests
+    useJUnitPlatform()
+}
